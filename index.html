@@ -1,0 +1,475 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de tutoriais</title>
+    
+    <style>
+* {
+    font-family:  'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    display: flex;
+    
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(76, 159, 255);
+    text-align: justify;
+    box-shadow: 10px 10px 10px rgba(15, 93, 238, 0.389);
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #ffcc3f;
+    border-right: 20px solid #ffcc3f;
+   
+}
+
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 250px;
+}
+
+
+.content {
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #1c56d3);
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: #ffcc3f;
+    bottom: 4px;
+    border-radius: 100px;
+}
+
+.content p {
+    color: #b7b7b7;
+}
+
+
+#read_button {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #ffcc3f;
+    color: #313131;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#read_button:hover {
+    background-color: transparent;
+    color: #ffcc3f;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.card.active .content {
+    height: auto;
+}
+
+.card.active .content::before {
+    visibility: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html,body{
+    background-color:#ffffff;
+    height:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    height: 100px;
+    padding: 10px 0;
+}
+.logo{
+    width: 50%;
+
+}
+.menu{
+    
+    width:50px;
+   text-align: right;
+  
+
+}
+
+.menu a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+  
+	
+}
+
+section.sobre{
+    height: calc(100% - 200px) ;
+    position: relative;
+
+}
+.extras{
+    position:absolute;
+    bottom:-330px;
+    right:-410px;
+    width: 1000px;
+    height: 1000px ;
+    background-color: rgb(76, 159, 255);
+    border-radius:50% ;
+}
+.social-media{
+    position: absolute;
+   right: 430px;
+    top: 200px;
+    }
+    .social-media img{
+        display: block;
+        width: 50px;
+        margin:10px 0 ;
+    }
+    .texto-sobre{
+        margin-top:100px;
+    }
+    .texto-sobre h1{
+        font-size: 50px;
+    }
+    .texto-sobre p{
+        margin:20px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        max-width: 800px;
+    }
+
+ .btns{
+    text-align: center;
+    margin-top: 50px; 
+}
+.efeito{
+    border: none;
+    color: rgb(200, 226, 255);
+    padding: 20px;
+    margin: 10px;
+    font-size: 13.5px;
+    line-height: 15px;
+    border-radius: 15px;
+    top: 325px;
+    left: -830px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.efeito-1{
+    background-color: rgb(76, 159, 255);
+}
+.efeito-1:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 55px;
+    background-color: rgb(64, 111, 238);
+    border-radius: 15px;
+    transition: all 1s ease;
+}
+.efeito-1:hover:before {
+    width:100%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  background: rgb(76, 159, 255);
+  padding-inline: 1950px;
+  display: flex;
+}
+
+.nav {
+max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 48px;
+  position: relative;
+ top: 4px;
+  left:-1870px ;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+}
+
+.hero {
+ 
+  background: center / cover no-repeat url("./bg.jpg");
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:rgb(76, 159, 255);
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+ 
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    
+  }
+}
+
+.rec-sq {
+     display: flex;
+     gap: 2em;
+     margin: 2em;
+    }
+.rectangle {
+  position: relative;
+  top: 75;
+  left: -3575px;
+     width: 34rem;
+     height: 14rem;
+     background: rgb(255, 255, 255);
+    }
+    p{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .posicao4{
+      position: relative;
+      top: -350;
+      left: 630;
+    }
+    .posicao3
+    {
+      position: relative;
+     
+      left: -500px;
+    }
+    .posicao2{
+    position: relative;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+   left: -1765px;
+}
+    </style>
+<body>
+  <header class="header">
+    
+      <nav class="nav">
+      <div class="logo"><img src="imagens/icone2-removebg-preview.png" ></div>
+        <button class="hamburger">menu</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="posicao2">
+    <section class="sobre">
+       
+        <div class="extras">
+            <img src="imagens/Design_sem_nome__1_-removebg-preview.png" width="500px" height="500px" vspace="15px" hspace="15px"/>
+            <div class="social-media">
+             <a href=""><img src="imagens/instagram.png" width="50px" height="50px"/></a>
+             <a href=""><img src="imagens/facebook.png"width="50px" height="50px"/></a>
+             <a href=""><img src="imagens/twitter.png"width="50px" height="50px"/></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="rec-sq">
+         
+          <div class="center">
+            <div class="texto-sobre">
+            <div class="rectangle">
+              <h1>Bem vindo<br/>Ao <span style="color: rgb(76, 159, 255);" >nossso site</span></h1>
+              <p>
+                  Fusce a mollis ipsum. Pellentesque eu scelerisque ante. Donec commodo venenatis mattis. Aenean laoreet, nulla non cursus pellentesque, mauris sem sodales urna, sed sagittis tortor magna ut enim. Aliquam efficitur est augue. Sed commodo pulvinar erat et feugiat. Vivamus viverra, est at dignissim imperdiet, sapien magna pellentesque risus, eu tempor arcu tortor ut est. Maecenas sit amet vulputate mauris, ut dictum dui. Aenean odio tortor, vestibulum condimentum mollis ut, vehicula vitae nisi. Donec consectetur urna non accumsan ullamcorper. Praesent cursus eget augue et finibus. Mauris eu finibus ex. Morbi et dapibus tortor, at cursus felis.
+              </p>
+            <div class="btns">
+              <div class="posicao4">
+              <button type="button" class="efeito efeito-1">Vamos começar</button>
+        </div>
+               </div>
+               </div>
+        </div>
+   
+     
+
+   </div>
+    </section>
+  </div>
+  
+    
+     
+</body>
+</html>
